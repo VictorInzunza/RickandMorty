@@ -5,6 +5,51 @@ body {
   background-attachment: fixed;
 }
 
+.earth-result {
+
+  align-items: center;
+  background-color: #aac942;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 4px;
+}
+
+.display-result {
+  padding: 4px;
+  align-items: center;
+  background-color: #42b4ca;
+  bottom: 5px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+
+  position: relative;
+}
+
+.button-search {
+  background-color: #aac942;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#searchValue {
+  background-color: #ffffff;
+  border: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  padding: 15px 32px;
+}
+
 .App {
   font-family: 'Patrick Hand', cursive;
 }
@@ -33,13 +78,15 @@ body {
   flex-wrap: wrap;
   gap: 25px;
   justify-content: center;
+  position: absolute;
 }
 
-.resident-card {
-  background-color: rgba(32, 32, 107, 0.671);
-  color: white;
-  height: 440px;
-  max-height: 440px;
+
+
+.episodes-title {
+  position: relative;
+  top: -54px;
+  right: -210px;
 }
 
 .resident-card-header {
@@ -50,7 +97,7 @@ body {
 .character-name {
   max-height: 42px;
   width: 191px;
-  top: -75px;
+  top: -99px;
   position: relative;
   font-size: xx-large;
   color: black;
@@ -129,6 +176,17 @@ body {
   justify-content: flex-end;
 }
 
+.specie.Mythological.Creature {
+  height: 8%;
+  display: flex;
+  padding-right: 10px;
+  position: relative;
+  top: -5px;
+  background-color: rgb(236, 42, 253);
+  font-size: larger;
+  justify-content: flex-end;
+}
+
 .specie.Robot {
   height: 8%;
   display: flex;
@@ -136,6 +194,17 @@ body {
   position: relative;
   top: -5px;
   background-color: rgb(88, 88, 88);
+  font-size: larger;
+  justify-content: flex-end;
+}
+
+.specie.Animal {
+  height: 8%;
+  display: flex;
+  padding-right: 10px;
+  position: relative;
+  top: -5px;
+  background-color: rgb(123, 255, 0);
   font-size: larger;
   justify-content: flex-end;
 }
@@ -209,12 +278,11 @@ body {
 .episodes {
   font-size: x-large;
   display: flex;
-  align-items: center;
   position: relative;
   height: 50px;
   width: 90px;
   right: -68%;
-  bottom: 30px;
+  bottom: 33px;
   background: linear-gradient(rgb(32, 32, 107), rgba(32, 32, 107, 0.253), rgb(32, 32, 107));
   justify-content: center;
   padding-right: 10px;
@@ -228,7 +296,13 @@ body {
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
+  background-color: rgba(32, 32, 107, 0.808);
+  color: white;
+  height: 440px;
+  max-height: 440px;
+  box-shadow: 1px 1px 5px #070707;
 }
+
 
 .resident-card-body {
   padding: 15px;
@@ -249,6 +323,10 @@ body {
   display: flex;
   flex-direction: column;
   color: aqua;
+  top: -30px;
+  position: relative;
+  font-size: larger;
+  align-items: center;
 }
 
 .errorMessage {
@@ -276,4 +354,16 @@ body {
   100% {
     right: 10px;
   }
+}
+
+.ir-arriba {
+  display: none;
+  padding: 20px;
+  background: #024959;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }

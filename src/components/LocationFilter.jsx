@@ -16,7 +16,7 @@ const LocationFilter = ({ locationName, getNewLocation }) => {
     }, [locationName])
 
     return (
-        <ul>
+        <ul className='earth-result'>
             {
                 locationsOptions?.map(locationOption => <li onClick={() => getNewLocation(locationOption.url)} key={locationOption.url}>{locationOption.name}</li>)
             }

@@ -53,21 +53,27 @@ function App() {
 
   return (
     <div className="App">
+
       <fragment className="head"><img className='logo' src={logo} alt="" />
         <form onSubmit={handleSubmit}>
-
           <input id="searchValue" type="text"
             onChange={handleChangeInput}
             placeholder="Search your dimension" />
-          <button type="submit">Search</button>
+          <button type="submit" className='button-search'>Search</button>
           {
             showError ? <ErrorMessage /> : ""
           }
 
         </form></fragment>
+      {
+        locationName ? <LocationFilter locationName={locationName} getNewLocation={getNewLocation} /> : ""
+      }
 
-      <LocationFilter locationName={locationName} getNewLocation={getNewLocation} />
       <LocationInfo location={location} />
+
+
+
+
       <ResidentList location={location} />
     </div>
   )

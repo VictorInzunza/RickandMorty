@@ -32,7 +32,7 @@ const ResidentCard = ({ urlResident }) => {
                     <li>{resident?.origin.name}</li>
                 </ul>
                 <element className="episodes">{resident?.episode.length}</element>
-                <span>Episodes</span>
+                <span className='episodes-title'>Episodes</span>
             </section>
         </article>
     )
