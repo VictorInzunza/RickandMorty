@@ -86,7 +86,8 @@ body {
 .episodes-title {
   position: relative;
   top: -54px;
-  right: -210px;
+  right: -218px;
+  color: rgb(121, 14, 143);
 }
 
 .resident-card-header {
@@ -99,7 +100,7 @@ body {
   width: 191px;
   top: -99px;
   position: relative;
-  font-size: xx-large;
+  font-size: x-large;
   color: black;
   overflow-wrap: break-word;
   text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000408, 0px -2px 0 #000103;
@@ -280,10 +281,11 @@ body {
   display: flex;
   position: relative;
   height: 50px;
-  width: 90px;
-  right: -68%;
-  bottom: 33px;
-  background: linear-gradient(rgb(32, 32, 107), rgba(32, 32, 107, 0.253), rgb(32, 32, 107));
+  width: 70px;
+  right: -75%;
+  bottom: 25px;
+  background-color: #f3cc4d;
+  box-shadow: 2px 2px 0 #49246b, 2px -2px 0 #040e66, -2px 2px 0 #2e2f79, -2px -2px 0 #4b338d, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000408, 0px -2px 0 #000103;
   justify-content: center;
   padding-right: 10px;
   border-bottom-right-radius: 64px;
@@ -356,14 +358,32 @@ body {
   }
 }
 
-.ir-arriba {
-  display: none;
-  padding: 20px;
-  background: #024959;
-  font-size: 20px;
-  color: #fff;
-  cursor: pointer;
+.boton-arriba {
+  border-style: none;
+  border-radius: 20%;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  right: 10px;
+  bottom: 10px;
+  height: 60px;
+  width: 45px;
+  background-color: #f3cc4d;
+  ;
+  box-shadow: 2px 2px 3px rgb(102, 25, 146);
+}
+
+.boton-arriba :Hover {
+  border-style: none;
+  border-radius: 20%;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  height: 55px;
+  width: 45px;
+  background-color: rgb(102, 25, 146);
+  box-shadow: -5px -5px 2px #ffffff
+}
+
+.up-hand {
+  height: 30px;
+  color: white;
 }

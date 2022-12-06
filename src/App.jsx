@@ -7,6 +7,7 @@ import LocationInfo from './components/LocationInfo'
 import ResidentList from './components/ResidentList'
 import getRandomNumber from './utils/getRandomNumber'
 import logo from "./assets/Photos/logo.svg"
+import upImage from "./assets/Photos/swipe-up.webp"
 
 function App() {
   const [location, setLocation] = useState()
@@ -55,7 +56,7 @@ function App() {
     <div className="App">
 
       <fragment className="head"><img className='logo' src={logo} alt="" />
-        <form onSubmit={handleSubmit}>
+        <form id="up" onSubmit={handleSubmit}>
           <input id="searchValue" type="text"
             onChange={handleChangeInput}
             placeholder="Search your dimension" />
@@ -71,10 +72,16 @@ function App() {
 
       <LocationInfo location={location} />
 
-
-
-
       <ResidentList location={location} />
+
+      <button className='boton-arriba'>
+
+        <a href="#up">
+          <img className="up-hand" src={upImage} alt="" />
+        </a>
+
+      </button>
+
     </div>
   )
 }
